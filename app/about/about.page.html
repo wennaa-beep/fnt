@@ -1,0 +1,113 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>ABOUT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  <ion-segment [(ngModel)]="type">
+    <ion-segment-button value="all">
+      <ion-label>CS</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="mentions">
+      <ion-label>DEVELOPERS</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ng-container [ngSwitch]="type">
+    <ion-list *ngSwitchCase="'all'">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Welcome to FuntasticElements!</ion-card-title>
+    
+        </ion-card-header>
+      
+        <ion-card-content>
+
+           FuntasticElements your reliable guide to the fascinating world of elements! We're dedicated to delivering precise and accessible information about each element on the periodic table. Our goal is to make learning about chemistry engaging and effortless. Powered by cutting-edge technology, FuntasticElements is designed to be your go-to resource for discovering the secrets of the elements.
+           Explore, learn, and enjoy the journey through the building blocks of our universe.
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+    <ion-list *ngSwitchCase="'mentions'">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>DEVELOPMENT TEAM:</ion-card-title>
+          <ion-card-subtitle></ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="wena" img src="../../assets/img/wena.jpg" />
+              </ion-thumbnail>
+              <ion-label>De Leon Wenabel</ion-label>
+            </ion-item>
+      
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="carmela" img src="../../assets/img/carmela.jpg" />
+              </ion-thumbnail>
+              <ion-label>Pangilinan Carmela</ion-label>
+            </ion-item>
+      
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="mae" img src="../../assets/img/mae.jpg" />
+              </ion-thumbnail>
+              <ion-label>Morete Mae Pauline</ion-label>
+            </ion-item>
+      
+           
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+        <ion-card>
+          <ion-card-header>
+        <ion-card-title>We are passionate about making chemistry fun and accessible. If you have any questions or suggestions, feel free to reach out to us at FuntasticElementsaltgmaildotcom. Thank you for exploring the periodic table with FunTasticElements!</ion-card-title>
+    
+      </ion-card-header>
+      <ion-card-content>
+      </ion-card-content>
+      </ion-card>
+<p></p><p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>SPECIAL THANKS:</ion-card-title>
+    <ion-card-subtitle>our professor</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="maam" img src="../../assets/img/maam.jpg" />
+        </ion-thumbnail>
+        <ion-label>Ms. Karelle Y. Ibale</ion-label>
+      </ion-item>
+       
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+  <ion-card>
+    <ion-card-header>
+  <ion-card-title>We extend our gratitude to Professor Iballe for her valuable guidance and expertise throughout the development of this app.</ion-card-title>
+
+</ion-card-header>
+<ion-card-content>
+</ion-card-content>
+</ion-card>
+
+
+
+    </ion-list>
+
+  </ng-container>
+</ion-content>
